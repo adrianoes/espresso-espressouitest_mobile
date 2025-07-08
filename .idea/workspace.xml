@@ -11,8 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65c36c4c-5d56-4a83-814c-62c1286e6022" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/run_tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run_tests.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/kotlin/sessions/kotlin-compiler-5763797475374870999.salive" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,33 +38,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Android App.app.executor": "Run",
-    "Android Instrumented Tests.All Tests.executor": "Run",
-    "Android Instrumented Tests.DirectorsFragmentTest.executor": "Run",
-    "Android Instrumented Tests.MovieFragmentTestSuite.executor": "Run",
-    "Android Instrumented Tests.MovieListFragmentTest.executor": "Run",
-    "Android Instrumented Tests.Tests in 'com.codingwithmitch.espressouitestexamples.ui.movie'.executor": "Run",
-    "Android Instrumented Tests.Tests in 'com.codingwithmitch.espressouitestexamples.util'.executor": "Run",
-    "Android Instrumented Tests.test_isActorsListVisible().executor": "Run",
-    "Android Instrumented Tests.test_isDirectorsListVisible().executor": "Run",
-    "Android Instrumented Tests.test_navDirectorsFragment_validateDirectorsList().executor": "Run",
-    "Android Instrumented Tests.test_recreateActivity().executor": "Run",
-    "Android Instrumented Tests.test_selectListItem_isDetailFragmentVisible().executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "debugger.dataViews"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.All Tests.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.DirectorsFragmentTest.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.MovieFragmentTestSuite.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.MovieListFragmentTest.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.Tests in 'com.codingwithmitch.espressouitestexamples.ui.movie'.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.Tests in 'com.codingwithmitch.espressouitestexamples.util'.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.test_isActorsListVisible().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.test_isDirectorsListVisible().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.test_navDirectorsFragment_validateDirectorsList().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.test_recreateActivity().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.test_selectListItem_isDetailFragmentVisible().executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;debugger.dataViews&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.codingwithmitch.espressouitestexamples" />
