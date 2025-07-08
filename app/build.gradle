@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace "com.codingwithmitch.espressouitestexamples"
+
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.codingwithmitch.espressouitestexamples"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    testOptions {
+        unitTests.includeAndroidResources = true
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+        }
+        androidTest {
+            manifest.srcFile 'src/androidTest/AndroidManifest.xml'
+            java.srcDirs = ['src/androidTest/java']
+            res.srcDirs = ['src/androidTest/res']
+        }
+    }
+
+    // ✅ Corrige conflitos de versão entre bibliotecas de teste
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.test:core:1.5.0'
+        }
+    }
+
+    // ✅ Corrige conflitos de arquivos duplicados no META-INF
+    packagingOptions {
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/LICENSE-notice.md'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.test.espresso:espresso-idling-resource:3.6.1'
+
+    // Glide
+    def glide_version = "4.9.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    // RecyclerView
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
+    // CardView
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    // Fragment
+    def fragment_version = "1.6.2"
+    implementation "androidx.fragment:fragment:$fragment_version"
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+
+    // Testes
+    testImplementation 'junit:junit:4.13.2'
+
+    androidTestImplementation "androidx.test:runner:1.5.2"
+    androidTestImplementation "androidx.test:core:1.5.0"
+    androidTestImplementation "androidx.test.ext:junit-ktx:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:3.5.1"
+    androidTestImplementation "androidx.test.espresso:espresso-idling-resource:3.6.1"
+
+
+    // Mockk
+    def mockk_version = "1.13.7"
+    androidTestImplementation "io.mockk:mockk-android:$mockk_version"
+
+    androidTestUtil 'androidx.test:orchestrator:1.4.2'
+}
